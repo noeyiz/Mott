@@ -15,9 +15,36 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        
         window?.windowScene = windowScene
-        window?.rootViewController = MainViewController()
+        
+        // ViewControllers
+        let mainViewController = MainViewController()
+        let settingsViewController = SettingsViewController()
+        
+        // NavigationControllers
+        let mainNavigationController = UINavigationController(
+            rootViewController: mainViewController
+        )
+        mainNavigationController.tabBarItem = UITabBarItem(
+            title: "",
+            image: UIImage(systemName: "creditcard.fill"),
+            selectedImage: UIImage(systemName: "creditcard.fill")
+        )
+        mainViewController.navigationItem.backButtonTitle = ""
+        let settingsNavigationController = UINavigationController(
+            rootViewController: settingsViewController
+        )
+        settingsNavigationController.tabBarItem = UITabBarItem(
+            title: "",
+            image: UIImage(systemName: "gearshape.fill"),
+            selectedImage: UIImage(systemName: "gearshape.fill")
+        )
+        
+        // TabBarControllers
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [mainNavigationController, settingsNavigationController]
+        
+        window?.rootViewController = tabBarController // 루트 뷰컨트롤러 설정
         window?.makeKeyAndVisible()
     }
 

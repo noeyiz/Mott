@@ -12,6 +12,12 @@
 		901D63F1290EC19D007892A4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D63F0290EC19D007892A4 /* MainViewController.swift */; };
 		901D63F6290EC19E007892A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901D63F5290EC19E007892A4 /* Assets.xcassets */; };
 		901D63F9290EC19E007892A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901D63F7290EC19E007892A4 /* LaunchScreen.storyboard */; };
+		90BD8578290FBA9800956373 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BD8577290FBA9800956373 /* BaseViewController.swift */; };
+		90BD857B290FBB8300956373 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BD857A290FBB8300956373 /* MainView.swift */; };
+		90BD857E290FBC2C00956373 /* AddSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BD857D290FBC2C00956373 /* AddSubscriptionViewController.swift */; };
+		90BD8581290FBC7500956373 /* AddSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BD8580290FBC7500956373 /* AddSubscriptionView.swift */; };
+		90BD8585290FC1F400956373 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BD8584290FC1F400956373 /* SettingsView.swift */; };
+		90BD8587290FC23100956373 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BD8586290FC23100956373 /* SettingsViewController.swift */; };
 		A0CB64FF99C9AEF53F6E0001 /* Pods_Mott.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED73EBE9920494882AEFC96D /* Pods_Mott.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +31,12 @@
 		901D63F5290EC19E007892A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		901D63F8290EC19E007892A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		901D63FA290EC19E007892A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90BD8577290FBA9800956373 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		90BD857A290FBB8300956373 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		90BD857D290FBC2C00956373 /* AddSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionViewController.swift; sourceTree = "<group>"; };
+		90BD8580290FBC7500956373 /* AddSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionView.swift; sourceTree = "<group>"; };
+		90BD8584290FC1F400956373 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		90BD8586290FC23100956373 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		ED73EBE9920494882AEFC96D /* Pods_Mott.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mott.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,7 +119,10 @@
 		901D6408290EC7EB007892A4 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				90BD8577290FBA9800956373 /* BaseViewController.swift */,
 				901D6409290EC7F0007892A4 /* Main */,
+				90BD857C290FBC1000956373 /* AddSubscription */,
+				90BD8582290FC1E200956373 /* Settings */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -116,8 +131,51 @@
 			isa = PBXGroup;
 			children = (
 				901D63F0290EC19D007892A4 /* MainViewController.swift */,
+				90BD8579290FBB1600956373 /* View */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		90BD8579290FBB1600956373 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90BD857A290FBB8300956373 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90BD857C290FBC1000956373 /* AddSubscription */ = {
+			isa = PBXGroup;
+			children = (
+				90BD857D290FBC2C00956373 /* AddSubscriptionViewController.swift */,
+				90BD857F290FBC6B00956373 /* View */,
+			);
+			path = AddSubscription;
+			sourceTree = "<group>";
+		};
+		90BD857F290FBC6B00956373 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90BD8580290FBC7500956373 /* AddSubscriptionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90BD8582290FC1E200956373 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				90BD8586290FC23100956373 /* SettingsViewController.swift */,
+				90BD8583290FC1EC00956373 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		90BD8583290FC1EC00956373 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90BD8584290FC1F400956373 /* SettingsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +293,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				901D63F1290EC19D007892A4 /* MainViewController.swift in Sources */,
+				90BD8585290FC1F400956373 /* SettingsView.swift in Sources */,
+				90BD8578290FBA9800956373 /* BaseViewController.swift in Sources */,
+				90BD8581290FBC7500956373 /* AddSubscriptionView.swift in Sources */,
 				901D63ED290EC19D007892A4 /* AppDelegate.swift in Sources */,
+				90BD857E290FBC2C00956373 /* AddSubscriptionViewController.swift in Sources */,
+				90BD857B290FBB8300956373 /* MainView.swift in Sources */,
 				901D63EF290EC19D007892A4 /* SceneDelegate.swift in Sources */,
+				90BD8587290FC23100956373 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
