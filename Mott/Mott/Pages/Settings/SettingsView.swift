@@ -1,5 +1,5 @@
 //
-//  AddSubscriptionView.swift
+//  SettingsView.swift
 //  Mott
 //
 //  Created by jiyeon on 2022/10/31.
@@ -10,12 +10,13 @@ import UIKit
 import SnapKit
 import Then
 
-class AddSubscriptionView: UIView {
+class SettingsView: UIView {
     
     // MARK: UI
     
+    /// 타이틀을 그려주는 라벨
     let titleLabel = UILabel().then {
-        $0.font = UIFont.systemFont(ofSize: 25, weight: .black)
+        $0.font = UIFont.systemFont(ofSize: 30, weight: .black)
         $0.numberOfLines = 2
     }
     
@@ -23,7 +24,6 @@ class AddSubscriptionView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         configureView()
     }
     
@@ -41,7 +41,7 @@ class AddSubscriptionView: UIView {
         
         // 제약 사항 설정
         titleLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(100)
+            $0.top.equalToSuperview().inset(70)
             $0.left.right.equalToSuperview().inset(20)
         }
     }

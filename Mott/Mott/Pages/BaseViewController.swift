@@ -15,7 +15,6 @@ class BaseViewController<View: UIView>: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.view.addSubview(baseView)
     }
     

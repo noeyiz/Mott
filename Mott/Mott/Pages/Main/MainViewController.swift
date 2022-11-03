@@ -20,7 +20,6 @@ class MainViewController: BaseViewController<MainView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.baseView.titleLabel.text = "나의\n구독 목록✨"
         bind()
     }

@@ -14,11 +14,13 @@ class MainView: UIView {
     
     // MARK: UI
     
+    /// 타이틀을 그려주는 라벨
     let titleLabel = UILabel().then {
         $0.font = UIFont.systemFont(ofSize: 30, weight: .black)
         $0.numberOfLines = 2
     }
     
+    /// 구독 항목을 그려주는 컬렉션뷰
     let collectionView = UICollectionView(
         frame: .zero,
         collectionViewLayout: UICollectionViewFlowLayout()
@@ -37,7 +39,6 @@ class MainView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         configureView()
     }
     
